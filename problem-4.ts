@@ -25,8 +25,8 @@
   };
 
   // Example usage:
-  const circle: Circle = { radius: 5 };
-  const rectangle: Rectangle = { height: 10, width: 5 };
+  const circle: Circle = { radius: 5,shape: "circle" };
+  const rectangle: Rectangle = { height: 10, width: 5,shape: "rectangle" };
 
   console.log(calculateShapeArea(circle)); // Expected output: 78.53981633974483
   console.log(calculateShapeArea(rectangle)); // Expected output: 50
