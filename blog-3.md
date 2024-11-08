@@ -69,7 +69,7 @@ function isDog(animal: Animal): animal is Dog {
 let myPet: Animal = new Dog("Max", "Bulldog");
 
 if (isDog(myPet)) {
-    console.log(myPet.breed); // Safe to access breed
+    console.log(myPet.breed); 
 } else {
     console.log("Not a Dog");
 }
@@ -96,8 +96,8 @@ function add(a: any, b: any) {
     }
 }
 
-console.log(add(5, 10));       // 15
-console.log(add(5, "hello"));  // Both values must be numbers!
+console.log(add(5, 10));       
+console.log(add(5, "hello"));  
 ```
 
 Here, `isNumber` is a user-defined Type Guard that checks if `a` and `b` are numbers. If they aren’t, it returns an appropriate message.
@@ -126,9 +126,9 @@ function isCat(animal: Cat | Dog): animal is Cat {
 const animal: Cat = { type: 'cat', meow: true };
 
 if (isCat(animal)) {
-    console.log(animal.meow);  // Safe to access meow
+    console.log(animal.meow);  
 } else {
-    console.log(animal.bark);  // Safe to access bark
+    console.log(animal.bark);  
 }
 ```
 
@@ -142,4 +142,4 @@ In this example, `isCat` checks if the `meow` property is present in the `animal
 
 ---
 
-This README provides an overview of Type Guards, including their necessity, types, and usage examples to enhance TypeScript applications.
+
