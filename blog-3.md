@@ -9,15 +9,15 @@ TypeScript is a statically typed language, meaning the compiler is aware of type
 
 Type Guards are essential for reducing type-related errors significantly. However, sometimes we need manual type-checking is necessary to prevent incorrect implementations. Here are some situations where Type Guards are necessary:
 
-* **Complex Object Structures**: When an object has multiple types, such as union or intersection types, we must ensure that a specific type is applied correctly to certain places.
+* **Complex Object Structures**: When an object has multiple types such as union or intersection types, we must ensure that a specific type is applied correctly to certain places.
 
-* **Safety**: Type Guards allow us working with defined types, allowing TypeScript to find type-related errors during runtime, reducing bugs.
+* **Safety**: Type Guards allow us working with defined types and allowing us TypeScript to find type-related errors during runtime.
 
-* **Improved Developer Experience**: Type Guards advance TypeScript's IntelliSense, providing suggestions and guidance on working with specific types.
+* **Improved Developer Experience**: Advance TypeScript's IntelliSense helps us providing suggestions and guidance on working with specific types by type guards.
 
 ## Types of Type Guards in TypeScript
 
-TypeScript allow us several ways to perform type-checking through Type Guards. Here are Type Guard methods:
+Type Guards uses some method for type checking. Here are Type Guard methods:
 
 ### 1. `typeof` Type Guard
 
@@ -38,7 +38,7 @@ if (isString(testValue)) {
 }
 ```
 
-In this example, `isString` uses the `typeof` operator to check if `value` is a string. If it is, `.toUpperCase()` used for using the value safely.
+In this example, `isString` uses the `typeof` operator to check if `value` is a string or not. If it is, `.toUpperCase()` used for using the value safely.
 
 ### 2. `instanceof` Type Guard
 
@@ -79,7 +79,7 @@ In this example, the `isDog` function uses `instanceof` to check if `myPet` is a
 
 ### 3. User-Defined Type Guards
 
-TypeScript allows us to create custom Type Guards using the `value is Type` syntax, which ensures a specific type.
+Wr can create custom Type Guards using the `value is Type` syntax in TypeScript, which ensures a specific type.
 
 #### Usage
 
